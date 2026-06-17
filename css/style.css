@@ -634,3 +634,73 @@ pre{
 .feature-card a:hover{
     opacity:.9;
 }
+/* ========================================
+   STATISTICS GRID
+======================================== */
+
+.statistics-grid{
+    display:grid;
+    gap:1.5rem;
+    margin-top:2rem;
+}
+
+@media (min-width:768px){
+
+    .statistics-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .statistics-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+/* ========================================
+   STAT CARD
+======================================== */
+
+.stat-card{
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius-lg);
+
+    padding:2rem 1.5rem;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+}
+
+.stat-card h3{
+    margin:0;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--color-secondary);
+
+    line-height:1;
+}
+
+.stat-card p{
+    margin-top:.75rem;
+
+    font-size:.95rem;
+
+    color:var(--color-text-soft);
+}
