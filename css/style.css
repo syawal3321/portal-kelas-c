@@ -475,3 +475,75 @@ pre{
     }
 
 }
+/* ========================================
+   NAV MENU
+======================================== */
+
+.main-navigation{
+    width:100%;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+    flex-wrap:wrap;
+    gap:1rem;
+
+    list-style:none;
+}
+
+.nav-menu li{
+    list-style:none;
+}
+
+.nav-menu a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:.75rem 1rem;
+
+    border-radius:var(--radius-full);
+
+    font-size:.95rem;
+    font-weight:600;
+
+    color:var(--color-text);
+
+    transition:var(--transition);
+}
+
+.nav-menu a:hover{
+    background:var(--color-surface-2);
+    color:var(--color-secondary);
+}
+
+.nav-menu a:focus{
+    outline:none;
+    background:var(--color-surface-2);
+}
+
+.nav-menu a.active{
+    background:var(--color-secondary);
+    color:white;
+}
+
+@media (max-width:768px){
+
+    .main-navigation{
+        width:100%;
+    }
+
+    .nav-menu{
+        justify-content:flex-start;
+        gap:.5rem;
+    }
+
+    .nav-menu a{
+        padding:.65rem .9rem;
+        font-size:.9rem;
+    }
+
+}
