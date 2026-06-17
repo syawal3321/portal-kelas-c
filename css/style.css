@@ -428,3 +428,50 @@ pre{
     grid-template-columns:repeat(4,1fr);
   }
 }
+/* ========================================
+   SITE HEADER
+======================================== */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:var(--color-bg);
+
+    border-bottom:1px solid var(--color-border);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:var(--shadow-sm);
+}
+
+.site-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:2rem;
+
+    padding:1rem 0;
+}
+
+.header-brand h1{
+    font-size:1.5rem;
+    margin-bottom:.25rem;
+    color:var(--color-primary);
+}
+
+.header-brand p{
+    font-size:.9rem;
+    color:var(--color-text-soft);
+}
+
+@media (max-width:768px){
+
+    .site-header .container{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
